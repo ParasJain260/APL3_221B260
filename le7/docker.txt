@@ -1,0 +1,6 @@
+docker network ls
+docker network create mongo-network
+docker run-d-p 27017:27017 --name mongo--network -e MONGO_INITDB ROOT_USERNAME = admin -e MONGO_ININTDB-ROOT-PASSWORD=admin mongo
+docker network inspect mongo-network 
+docker Run - d-p 8081:8081 --name mongo -express --network mongo -network -e ME -CONFIG-MONGODB_ADMINUSERNAME=admin-e ME_CONGIG_MONGODB-URL="mongodb://admion@mongoDB:27017"mongo-express
+mongo-express is an admin interface to connect to the MongoDB database
